@@ -113,7 +113,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Z:\OneDrive - bupt.edu.cn\软件工程\需求文档\09_A_用户需求说明书_V1.0.docx" />
+    <None Include="09_A_用户需求说明书_V1.0.docx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

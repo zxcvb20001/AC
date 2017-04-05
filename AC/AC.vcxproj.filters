@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="文档">
-      <UniqueIdentifier>{645a0478-005d-4bc7-946d-fc8cb969ed7a}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -23,8 +20,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Z:\OneDrive - bupt.edu.cn\软件工程\需求文档\09_A_用户需求说明书_V1.0.docx">
-      <Filter>文档</Filter>
+    <None Include="09_A_用户需求说明书_V1.0.docx">
+      <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
 </Project>
