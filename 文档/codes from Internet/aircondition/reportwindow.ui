@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReportWindow</class>
+ <widget class="QWidget" name="ReportWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>509</width>
+    <height>391</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;微软雅黑&quot;;</string>
+       </property>
+       <property name="title">
+        <string>报表类型</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QRadioButton" name="DayFormatButton">
+          <property name="styleSheet">
+           <string notr="true">font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>日报表</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="MonthFormatButton">
+          <property name="styleSheet">
+           <string notr="true">font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>周报表</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="WeekFormatButton">
+          <property name="styleSheet">
+           <string notr="true">font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>月报表</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QPushButton" name="UpdateButton">
+       <property name="text">
+        <string>刷新</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ClearButton">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;微软雅黑&quot;;</string>
+       </property>
+       <property name="text">
+        <string>清空数据库</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QStackedWidget" name="SelectStackedWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="page">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QDateEdit" name="DayChoose">
+           <property name="maximumDateTime">
+            <datetime>
+             <hour>23</hour>
+             <minute>59</minute>
+             <second>59</second>
+             <year>2015</year>
+             <month>12</month>
+             <day>31</day>
+            </datetime>
+           </property>
+           <property name="minimumDateTime">
+            <datetime>
+             <hour>0</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>2015</year>
+             <month>1</month>
+             <day>1</day>
+            </datetime>
+           </property>
+           <property name="maximumDate">
+            <date>
+             <year>2015</year>
+             <month>12</month>
+             <day>31</day>
+            </date>
+           </property>
+           <property name="currentSection">
+            <enum>QDateTimeEdit::MonthSection</enum>
+           </property>
+           <property name="displayFormat">
+            <string>MMM/d</string>
+           </property>
+           <property name="calendarPopup">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="page_3">
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QComboBox" name="MonthChoose">
+           <item>
+            <property name="text">
+             <string>一月</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>二月</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>三月</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>四月</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>五月</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>六月</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>七月</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>八月</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>九月</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>十月</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>十一月</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>十二月</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="page_2">
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QComboBox" name="WeekChoose">
+           <item>
+            <property name="text">
+             <string>第1周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第2周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第3周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第4周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第5周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第6周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第7周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第8周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第9周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第10周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第11周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第12周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第13周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第14周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第15周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第16周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第17周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第18周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第19周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第20周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第21周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第22周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第23周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第24周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第25周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第26周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第27周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第28周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第29周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第30周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第31周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第32周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第33周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第34周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第35周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第36周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第37周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第38周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第39周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第40周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第41周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第42周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第43周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第44周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第45周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第46周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第47周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第48周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第49周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第50周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第51周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>第52周</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;微软雅黑&quot;;</string>
+       </property>
+       <property name="text">
+        <string>单击温控次数显示详细温控信息</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;微软雅黑&quot;;</string>
+       </property>
+       <property name="text">
+        <string>房间号</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="RoomNumberCombox">
+       <item>
+        <property name="text">
+         <string>全部</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>9</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="reporttable">
+     <property name="styleSheet">
+      <string notr="true">font: 9pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <column>
+      <property name="text">
+       <string>房间号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>开关机次数</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>温控次数</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>费用</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
