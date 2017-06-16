@@ -1,0 +1,63 @@
+<RCC>
+    <qresource prefix="/">
+        <file>slave_surface.ico</file>
+        <file>cool.png</file>
+        <file>warm.png</file>
+        <file>login.jpg</file>
+    </qresource>
+    <qresource prefix="/ui">
+        <file>Hand1.tga</file>
+        <file>Hand2.tga</file>
+        <file>HoverEnemy.tga</file>
+        <file>mode2.png</file>
+        <file>wind2.png</file>
+        <file>back.png</file>
+        <file>down.png</file>
+        <file>up.png</file>
+        <file>cold.png</file>
+        <file>temp.png</file>
+        <file>warm.png</file>
+        <file>CCC.png</file>
+    </qresource>
+    <qresource prefix="/window">
+        <file>close2.png</file>
+        <file>min2.png</file>
+        <file>1.png</file>
+        <file>2.png</file>
+        <file>3.png</file>
+        <file>4.png</file>
+        <file>5.png</file>
+        <file>6.png</file>
+        <file>7.png</file>
+        <file>8.png</file>
+        <file>9.png</file>
+        <file>10.png</file>
+        <file>11.png</file>
+        <file>12.png</file>
+        <file>13.png</file>
+        <file>14.png</file>
+        <file>17.png</file>
+        <file>18.png</file>
+        <file>19.png</file>
+        <file>20.png</file>
+        <file>back.png</file>
+        <file>comeBack.png</file>
+        <file>confirm.png</file>
+        <file>new.png</file>
+        <file>next.png</file>
+        <file>next2.png</file>
+        <file>state.png</file>
+        <file>state2.png</file>
+        <file>off.png</file>
+        <file>on.png</file>
+        <file>switch1.png</file>
+        <file>switch2.png</file>
+        <file>15.png</file>
+        <file>black.png</file>
+        <file>blue.png</file>
+        <file>16.png</file>
+        <file>close.png</file>
+        <file>min.png</file>
+        <file>ok.png</file>
+    </qresource>
+</RCC>

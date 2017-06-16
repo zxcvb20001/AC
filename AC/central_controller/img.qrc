@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>central.jpg</file>
+        <file>central_surface.ico</file>
+        <file>config.ico</file>
+        <file>config.png</file>
+        <file>cool.png</file>
+        <file>report.ico</file>
+        <file>report.png</file>
+        <file>slave_surface.png</file>
+        <file>start.png</file>
+        <file>warm.png</file>
+        <file>number_password.txt</file>
+        <file>slave_surface.ico</file>
+        <file>surface1.jpg</file>
+        <file>search.png</file>
+        <file>close.png</file>
+        <file>calendar.png</file>
+        <file>clear_db.png</file>
+    </qresource>
+</RCC>
